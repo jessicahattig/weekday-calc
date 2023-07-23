@@ -12,5 +12,9 @@ describe("Calc", () =>{
         expect(calc.day).toEqual("Sunday");
     });
 
-    test("should return a day of the week connected to user inputted date")
+    test("should return a day of the week connected to user inputted date", () => {
+        let inputDate =  new Date(2023, 7, 23);
+        let calcDate = new Calc(inputDate);
+        expect(calcDate.day).toEqual("Sunday");
+    });
 });
