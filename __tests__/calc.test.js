@@ -11,4 +11,6 @@ describe("Calc", () =>{
         expect(calc.date).toEqual(new Date(2023, 6, 23));
         expect(calc.day).toEqual("Sunday");
     });
+
+    test("should return a day of the week connected to user inputted date")
 });
